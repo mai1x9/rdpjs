@@ -1,5 +1,5 @@
-var rdp = require('node-rdpjs-2');
-// var rdp = require('./rdp');
+// var rdp = require('node-rdpjs-2');
+var rdp = require('./rdp');
 
 var client = rdp.createClient({ 
 	// domain : 'windows-himansh', 
