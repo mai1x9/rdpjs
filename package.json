@@ -1,0 +1,22 @@
+{
+  "name": "rdpjs",
+  "version": "1.0.0",
+  "description": "node-rdpjs ========",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/citronneur/node-rdpjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/citronneur/node-rdpjs/issues"
+  },
+  "homepage": "https://github.com/citronneur/node-rdpjs#readme",
+  "dependencies": {
+    "node-forge": "^1.3.1"
+  }
+}
