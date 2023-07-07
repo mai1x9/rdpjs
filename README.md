@@ -39,9 +39,9 @@ Error
 ```
 In order to fix the above issue we need to disable NLA authentication which is not recommended. 
 
-A fork of node-rdp which is `node-rdpjs2` at: https://github.com/Siyer2/node-rdpjs also throws the same error. However node-rdpjs even though nla authentication is enabled, it is not working. 
+A fork of node-rdp which is `node-rdpjs2` at: https://github.com/Siyer2/node-rdpjs also throws the same error. However node-rdpjs even though nla authentication is enabled, is not working or probably taking too long to connect.
 
-Error by `node-rdpjs-2`,
+**Error:** by `node-rdpjs-2`,
 ```
 ubuntu@traqez-ubuntu-agentserver-1:~/services/node-rdpjs$ node test.js 
 {"name":"node-rdpjs","hostname":"traqez-ubuntu-agentserver-1","pid":77093,"level":40,"msg":"NODE_RDP_PROTOCOL_X224_NEG_FAILURE(Failure code:5 (see https://msdn.microsoft.com/en-us/library/cc240507.aspx))\nError: Failure code:5 (see https://msdn.microsoft.com/en-us/library/cc240507.aspx)\n    at new ProtocolError (/home/ubuntu/services/node-rdpjs/node_modules/node-rdpjs-2/lib/core/error.js:40:8)\n    at Client.recvConnectionConfirm (/home/ubuntu/services/node-rdpjs/node_modules/node-rdpjs-2/lib/protocol/x224.js:221:9)\n    at TPKT.<anonymous> (/home/ubuntu/services/node-rdpjs/node_modules/node-rdpjs-2/lib/protocol/x224.js:202:8)\n    at Object.onceWrapper (node:events:642:26)\n    at TPKT.emit (node:events:527:28)\n    at TPKT.recvData (/home/ubuntu/services/node-rdpjs/node_modules/node-rdpjs-2/lib/protocol/tpkt.js:110:7)\n    at BufferLayer.<anonymous> (/home/ubuntu/services/node-rdpjs/node_modules/node-rdpjs-2/lib/protocol/tpkt.js:101:8)\n    at Object.onceWrapper (node:events:642:26)\n    at BufferLayer.emit (node:events:527:28)\n    at BufferLayer.recv (/home/ubuntu/services/node-rdpjs/node_modules/node-rdpjs-2/lib/core/layer.js:91:8)","time":"2023-07-07T03:37:18.225Z","v":0}
